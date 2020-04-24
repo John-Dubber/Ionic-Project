@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title><ion-button [routerLink]="['../']">&lt;</ion-button>news</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ul>
+  <li *ngFor="let story of NewsStories">
+    <h3>{{story.title}}</h3>
+    <p>{{story.content}}</p>
+    <img height="150" width="150" src="{{story.urlToImage}}">
+  </li>
+</ul>
+</ion-content>

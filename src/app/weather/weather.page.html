@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title><ion-button [routerLink]="['../']">&lt;</ion-button>weather</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <li *ngFor="let weather of weatherData">
+    <h3>Weather: {{weatherData[0].description}}</h3>
+    
+   <p>Wind Speed: {{weatherData[0].wind.speed}}</p>
+    <p>Temperature: {{weatherData[0].main.temp}}</p>
+    <p>Real Temperature: {{weatherData[0].main.feels_like}}</p>
+    <p>Max: {{weatherData[0].main.temp_max}}</p>
+    <p>Min: {{weatherData[0].main.temp_min}}</p>-->
+  </li>
+</ion-content>

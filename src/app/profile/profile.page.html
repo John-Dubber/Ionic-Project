@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    
+    <ion-title><ion-button [routerLink]="['../']">&lt;</ion-button>profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p>Name: {{name}}</p>
+  <p>Address: {{address}}</p>
+  <p>Email: {{email}}</p>
+  <p>Age: {{age}}</p>
+
+  <br>
+  <ion-input [(ngModel)]="name" placeholder="Change your name"></ion-input>
+  <ion-input [(ngModel)]="address" placeholder="Change your address"></ion-input>
+  <ion-input [(ngModel)]="email" placeholder="Change your email"></ion-input>
+  <ion-input [(ngModel)]="age" placeholder="Change your age"></ion-input>
+
+
+  <ion-button (click)="onSave()">Save</ion-button>
+
+</ion-content>
